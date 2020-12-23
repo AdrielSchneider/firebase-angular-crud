@@ -1,0 +1,13 @@
+<nb-card>
+    <nb-card-body>
+        <input disabled="true" type="text" nbInput placeholder="Id" [(ngModel)]="product.code"><br>
+        <input type="text" nbInput placeholder="Nome" [(ngModel)]="product.name"><br>
+        <input type="text" nbInput placeholder="Descrição" [(ngModel)]="product.description"><br>
+        <input type="text" nbInput placeholder="Quantidade" [(ngModel)]="product.quantity"><br>
+        <input type="text" nbInput placeholder="Valor" [(ngModel)]="product.price"><br>
+    </nb-card-body>
+    <nb-card-footer>
+        <button nbButton status="success" (click)="save()">Salvar</button>
+        <button nbButton status="danger" (click)="close()">Cancelar</button>
+    </nb-card-footer>
+  </nb-card>

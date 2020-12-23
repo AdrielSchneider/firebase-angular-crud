@@ -1,0 +1,32 @@
+<nb-card>
+  <nb-card-body>
+    <!-- Linha do Card -->
+    <div class="card-row">
+      <!-- Coluna 1 -->
+      <div class="card-col">
+        <nb-card accent="info">
+          <nb-card-body>
+            <button nbButton status="info" (click)="navigateCrudItens()">Itens</button>
+          </nb-card-body>
+        </nb-card>
+      </div>
+      <!-- Coluna 2 -->
+      <div class="card-col">
+        <nb-card accent="danger">
+          <nb-card-body>
+            <button nbButton status="danger" (click)="navigateCrudPessoa()">Pessoas</button>
+          </nb-card-body>
+        </nb-card>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>
+
+<!--nb-card>
+  <nb-card-header>CRUD</nb-card-header>
+  <nb-card-body class="example-items-rows">
+    
+  </nb-card-body>
+  <button nbButton status="success" (click)="navigateCrud()">Consultar</button>
+    <button nbButton (click)="navigateInsere()">Inserir</button>
+</nb-card-->
